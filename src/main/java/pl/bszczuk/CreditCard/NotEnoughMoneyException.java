@@ -1,4 +1,4 @@
-package pl.bszczuk.creditcard;
+package pl.bszczuk.CreditCard;
 
 public class NotEnoughMoneyException extends IllegalStateException {
 }

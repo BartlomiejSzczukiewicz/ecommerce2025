@@ -1,4 +1,4 @@
-package pl.bszczuk.creditcard;
+package pl.bszczuk.CreditCard;
 
 import org.junit.jupiter.api.Test;
 
