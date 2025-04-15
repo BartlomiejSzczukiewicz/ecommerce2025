@@ -7,25 +7,25 @@ import java.util.UUID;
 public class ProductCatalog {
 
     ProductStorage productStorage;
-//    TECH
 
     public ProductCatalog(ProductStorage productStorage) {
-       this.productStorage = productStorage; //TEch
+       this.productStorage = productStorage;
     }
 
-    public List<Product> AllProducts() {
-        return  productStorage.allProduct(); //TECH
+    public List<Product> allProducts() {
+        return productStorage.allProduct();
     }
 
-    public String createProduct(String name, String description) {
+    public String createProduct(String name, String description, BigDecimal price) {
         var uuid = UUID.randomUUID();
 
         var newProduct = new Product(
                 uuid,
                 name,
-                description
-        ); // DOMAIN
-        this.productStorage.save(newProduct); // TECH
+                description,
+                price
+        );
+        this.productStorage.save(newProduct);
         return newProduct.getId();
     }
 
@@ -37,14 +37,14 @@ public class ProductCatalog {
     public void changePrice(String productId, BigDecimal bigDecimal) {
         var product = productStorage.loadProductById(productId);
 
-        if(BigDecimal.ZERO.compareTo(bigDecimal) <= 0) { // DOMAIN
+        if(BigDecimal.ZERO.compareTo(bigDecimal) <= 0) {
             throw new InvalidPriceException();
         }
     }
 
     public void changeImage(String productId, String url) {
         var product = loadProductById(productId);
-        product.setImage(url); // DOMAIN
+        product.setImage(url);
 
     }
 }

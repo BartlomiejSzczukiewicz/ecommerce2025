@@ -8,12 +8,13 @@ public class Product {
     private final String name;
     private final String description;
     private String url;
-    private BigDecimal price;
+    private BigDecimal price; //czemu to ma byc bigDecimal?
 
-    public Product(UUID uuid, String name, String description) {
+    public Product(UUID uuid, String name, String description, BigDecimal price) {
         this.uuid = uuid;
         this.name = name;
         this.description = description;
+        this.price = price;
     }
 
     public String getId() {
@@ -34,7 +35,7 @@ public class Product {
 
     public void setImage(String url) {
         this.url = url;
-    }
+    } //pozniej
 
     public BigDecimal getPrice() {
         return price;

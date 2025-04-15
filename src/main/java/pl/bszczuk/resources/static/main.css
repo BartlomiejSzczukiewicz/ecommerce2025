@@ -1,0 +1,73 @@
+/* Reset some basic styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Page title */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Product list grid */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual product card */
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.product:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+}
+
+/* Price and button row */
+.product__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Price */
+.product__price span {
+    font-weight: bold;
+    color: #27ae60;
+    font-size: 1rem;
+}
+
+/* Button */
+.product__price button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.product__price button:hover {
+    background-color: #2980b9;
+}

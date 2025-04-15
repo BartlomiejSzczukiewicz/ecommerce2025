@@ -9,7 +9,7 @@ public class ArrayListProductStorage implements ProductStorage {
     private List<Product> products;
 
     public ArrayListProductStorage() {
-        this.products = new ArrayList<>(); //TEch
+        this.products = new ArrayList<>();
     }
 
     @Override
@@ -19,7 +19,7 @@ public class ArrayListProductStorage implements ProductStorage {
 
     @Override
     public List<Product> allProducts() {
-        return Collections.unmodifiableList(products); //TECH
+        return Collections.unmodifiableList(products);
     }
 
     @Override
