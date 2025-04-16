@@ -1,4 +1,4 @@
-package pl.bszczuk.ecommerce;
+package pl.bszczuk.ecommerce.productcatalog;
 
 import pl.bszczuk.productcatalog.*;
 import org.springframework.web.bind.annotation.GetMapping;
