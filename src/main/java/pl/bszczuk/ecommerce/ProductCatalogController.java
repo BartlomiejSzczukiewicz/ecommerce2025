@@ -1,6 +1,7 @@
-package pl.bszczuk.ecommerce.productcatalog;
+package pl.bszczuk.ecommerce;
 
-import pl.bszczuk.productcatalog.*;
+import pl.bszczuk.ecommerce.productcatalog.Product;
+import pl.bszczuk.ecommerce.productcatalog.ProductCatalog;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

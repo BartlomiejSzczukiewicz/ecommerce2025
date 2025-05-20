@@ -1,4 +1,4 @@
-package pl.bszczuk.productcatalog;
+package pl.bszczuk.ecommerce.productcatalog;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package pl.bszczuk.productcatalog;
+package pl.bszczuk.ecommerce.productcatalog;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -32,7 +32,7 @@ public class ArrayListProductStorage implements ProductStorage {
         return products.stream()
                 .filter(product -> product.getId().equals(productId))
                 .findFirst()
-                .get(); // TECH
+                .get();
 
     }
 }
